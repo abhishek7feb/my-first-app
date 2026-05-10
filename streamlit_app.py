@@ -8,5 +8,7 @@ st.title('my-first-app')
 
 st.info('Hi')
 
-df = pd.read_csv('penguins.csv')
-df
+with st.expander('data'):
+  st.writer('raw data')
+  df = pd.read_csv('penguins.csv')
+  df
