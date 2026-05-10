@@ -1,5 +1,12 @@
 import streamlit as st
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+import seaborn as sns
 
-st.title('🎈 App Name')
+st.title('my-first-app')
 
-st.write('Hello world!')
+st.info('Hi')
+
+df = pd.read_csv('penguins.csv')
+df
